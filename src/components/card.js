@@ -1,5 +1,6 @@
+import './card.css';
 function Card() {
- return
+ return <div className="card">{props.children}</div>;
 }
 
 export default Card;
