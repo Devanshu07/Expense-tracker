@@ -39,9 +39,11 @@ const dateChangeHandler = (event) => {
   // })
   setEnteredDate(event.target.value);
 };
+  const submitHandler = () => {
 
+  }
   return (
-  <form>
+  <form onSubmit={submitHandler}>
     <div className="new-expense__control">
         <div className="new-expense__control">
         <label>Title</label>
@@ -57,7 +59,7 @@ const dateChangeHandler = (event) => {
         </div>
     </div>
     <div className="new-expense__actions">
-        <button type="submit" onClick={}>
+        <button type="submit">
             Add Expense
         </button>
     </div>
