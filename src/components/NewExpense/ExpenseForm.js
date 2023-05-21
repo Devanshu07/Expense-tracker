@@ -39,8 +39,8 @@ const dateChangeHandler = (event) => {
   // })
   setEnteredDate(event.target.value);
 };
-  const submitHandler = () => {
-
+  const submitHandler = (event) => {
+   event.preventDefault();
   }
   return (
   <form onSubmit={submitHandler}>
