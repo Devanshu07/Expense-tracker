@@ -14,7 +14,7 @@ console.log(expenseData);
    };
 
    return (<div className='new-expense'>
-   <ExpenseForm onSaveExpenseData />
+   <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
    </div>
    );
 };
